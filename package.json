@@ -16,6 +16,7 @@
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "deep-freeze": "0.0.1",
     "expect": "^23.3.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",

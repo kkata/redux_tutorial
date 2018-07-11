@@ -1,9 +1,12 @@
 module.exports={
   mode: "development",
-  entry: ["./src/app.js"],
+  entry: {
+    app: './src/app.js',
+    todo: './src/todo.js'
+  },
   output: {
     path: __dirname+"/dist",
-    filename: "app.js"
+    filename: "[name].js"
   },
   module: {
     rules: [
