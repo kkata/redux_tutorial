@@ -49,18 +49,11 @@ const visibilityFilter = (
 	}
 }
 
-const todoApp = (state = {}, action) => {
-	return {
-		todos: todos(
-			state.todos,
-			action
-		),
-		visibilityFilter: visibilityFilter(
-			state.visibilityFilter,
-			action
-		)
-	}
-}
+import { combineReducers } from 'redux'
+const todoApp = combineReducers({
+	todos,
+	visibilityFilter
+})
 
 const store = createStore(todoApp)
 
